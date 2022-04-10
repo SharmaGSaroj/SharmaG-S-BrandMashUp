@@ -1,9 +1,9 @@
-
+![header image](/images/our-brew-background.jpg "Pampers Product Mashup")
 # PAMPERS 
 
 #### BY SAROJ SHARMA G
 
-#### This is a website for a FIP brand mashup.
+#### Brand MashUp Website for Final Project Term2
 
 ## Technologies Used
 
@@ -15,8 +15,7 @@
 
 
 ## Description
-
-This browser allows the viewers to look out the beer product.
+Brand MashUp Website for Final Project Term2. This is product combination of 2 products called michelobultra beer and Pampers.
 
 
 
@@ -26,11 +25,19 @@ This browser allows the viewers to look out the beer product.
 * Download the code and open the index file from the downloded.
 * OR You can check the website after the website is done 
 
+## Additional Resources:
 
-## Known Bugs
+### Styles:
+[Box Shadow Visualizer](https://www.cssmatic.com/box-shadow 'CSSMatic')
 
-* The page is not responsive
-* The page is under construction
+[CSS Gradient Generator](https://cssgradient.io/ 'CSSGradient.io') 
+
+### Tutorials:
+[CSS Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation 'MDN web docs')
+
+### Additional Sources:
+
+[Stock Photos Used from Pexels](https://www.pexels.com/ 'Pexels')
 
 ## License
 
