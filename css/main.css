@@ -1,21 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .sitecontainer {
   margin: 0;
   padding: 0;
-  font-family: "Oswald", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Source Code Pro", monospace;
-  font-family: "Source Serif 4", sans-serif;
+  max-width: 2000px;
+  font-family: 'Raleway', sans-serif;
 }
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(/images/background-image.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/background.jpg);
   height: 100vh;
   background-image: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 10px;
   text-align: center;
   color: #fff;
 }
@@ -25,113 +21,737 @@
 .topsection {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.header img {
-  width: 140px;
+.logo {
+  width: 100px;
   height: auto;
 }
-.mainNavLeft {
-  display: inline;
+ul
+{	
+	float: left;
+  align-items: center;
+  font-size: 20px;
+}
+ul li
+{
+	display: inline-block;
+}
+ul li a
+{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;
+	
+}
+ul li a:hover{
+
+	color:#000;
+}
+ul li.active a{
+	
+	color:#000;
 }
 .Slogan {
-  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  line-height: 1.5;
+  font-weight: bold;
+  padding-top: 150px;
+  letter-spacing: 0rem;
+  text-align: justify;
+  color: #fff; 
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
+  
+
+@keyframes animate {
+  0% {
+    background-position: -400%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 .Welcome {
   margin-top: 40px;
   padding-bottom: 40px;
-  overflow: hidden;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .welcometext {
-  width: 90%;
-  max-width: 500px;
-  border-radius: 30px;
-  margin: auto;
-  padding: 2px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0rem;
+  text-align: justify;
+ text-align: center;
+  
 }
-.welcometext img {
-  width: 300px;
+.Welcometext img {
+  width: 600px;
   height: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 50px;
+  max-width: 80%;
 }
+
 .Products {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
 }
-
+.beer{
+  box-shadow: 0 0 20px 1px rgba(120, 137, 207, 0.18);
+  margin-bottom:50px;
+  transition: 1s;
+  border-radius:15px;
+}
+.beer:hover
+{
+  transform: scale(1.2);
+}
 .beer img {
-  width: 300px;
+  width: 200px;
   height: auto;
 }
-
+/*Promo Image Start*/
 .promo {
   display: flex;
-  flex-direction: row;
-  flex-flow: row;
-  gap: 20px;
-}
-.promoText p {
-  float: right;
-  gap: 20px;
-}
-.promoText img {
-  width: 400px;
-  height: auto;
-  padding-left: 100px;
-}
-footer {
-  margin-top: 60px;
-  padding-bottom: 60px;
-  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 40px;
-  justify-items: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
-.footer > * {
-  flex: 1 1 200px;
+.promoimage p {
+  font: 10px;
+line-height: 1.5;
+font-weight: bold;
+letter-spacing: 0rem;
+text-align: justify;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
 }
+
+.promoimage img {
+  width: 500px;
+  height: auto;
+  margin-left: 50px;
+  max-width: 85%;
+  gap: 20px
+  ;
+  
+}
+.promobtn
+ {
+  padding: 21px 48px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color:white;
+  background-color:blue;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  
+ }
+ 
+ .promobtn:hover {
+  background-color: green;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+ }
+ 
+ .promobtn:active {
+  transform: translateY(-1px);
+ }
+/*Promo Image End*/
+
+
+/* FOOTER START*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(#09ad43,#9610fb); 
+}
+
 .FooterLogo img {
   width: 100px;
-  height: 100px;
+  height: auto;
 }
-.SocialIcon {
-  width: 150px;
-  height: 200px;
-}
-.FooterNav {
-  width: 150px;
-  height: 200px;
-}
-.ProductSlogan {
-  width: 150px;
-  height: 200px;
-}
-.SubscribeText {
-  width: 200px;
-  height: 100px;
+.footerslogan{
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0rem;
+  justify-content: center;
+  color: white;
 
+}
+.SocialIcon  ul li{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 20PX
+  ;
+}
+.FooterNav ul li {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.policy ul li{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.EmailInput p {
+ color: white;
+ font-size: 20px;
+ font-weight: bold;
+
+}
+/* footer end*/
+
+
+/*Our-Brew Start*/
+.Our-Brew {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/our-brew-background.jpg);
+  height: 100vh;
+  background-image: cover;
+  background-position:center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+.logo {
+  width: 150px;
+  height: auto;
+}
+.brew{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.beer1{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  float: right;
+  flex-wrap: wrap;
+}
+.beer1 img{
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+  max-width: 80%;
+}
+.info{
+  margin-left: 180px;
+  max-width: 80%;
+  padding-top: 50px;
+  
+}
+.info h4{
+ color: #9610fb;
+ font-weight: bold;
+ font-size: x-large;
+ 
+}
+.info p{
+  justify-content: left;
+  font-size: 20px;
+  font-style: normal;
+  padding-top: 20px;
+  line-height: normal;
+
+}
+.info2{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+
+.number{
+  color: red;
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+}
+.heading{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
   align-items: center;
 }
-.EmailInput {
-  width: 400px;
-  height: 100px;
+.amount{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
 }
-.Promotion {
+/* Our-Brew End*/
+
+/*Contact Us Start */
+
+.container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.box {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+.box > * {
+  padding: 1em;
+}
+
+
+.company-info ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.company-info , .contact h3{
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  align-items: center;
+  display: inline-block;
+}
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
-.promo img {
-  width: 500px;
+.contact {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+ font: bold;
+}
+
+
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #627EDC;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+
+/*Contact Us End */
+
+
+/*Promotion Start */
+
+.Promotion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/Promo-Image2.jpg);
+  height: 95vh;
+  width: auto;
+  background-image: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+
+.logo {
+  width: 150px;
   height: auto;
 }
+.Promotions{
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.promo1 img {
+
+  width: 500px;
+  height: auto;
+  margin-left: 50px;
+  gap:20px;
+  max-width: 80%;
+
+
+}
+.promo1 p{
+font-size: 30px;
+line-height: 1.5;
+font-weight: bold;
+letter-spacing: 0rem;
+text-align: justify;
+text-align: center;
+}
+
+.promo1 video{
+  width: 500px;
+}
+
+
+/*Promotion End*/
+
+
+/* Landing Page Start*/
+.landing{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url(../images/landing-page-background.jpg);
+  height: 95vh;
+  background-image: cover;
+  background-attachment: fixed;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  opacity: 75%;
+  font-family: 'Raleway', sans-serif;
+
+}
+.sitecontainer1 {
+  margin: 0 auto;
+  width: 920px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #666;
+}
+.logo1 img{
+  height: auto;
+  width: 400px;
+}
+.words p
+{
+  font-weight: 400;
+  font-size: 30px;
+  font-style: italic;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+  input {
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+      background-color: #fff;
+      padding: 3px 5px;
+      box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+      width: 190px;
+    }
+   
+.btu{
+  position: relative;
+  background-color: white;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: medium;
+}
+button
+p{
+  font-size: medium;
+  color:black;
+}
+.btu:hover{
+  background:blue;
+  
+  
+}
+button p:hover{
+color: white;
+}
+.Policy1{
+  display: flex;
+  flex-direction: column;
+}
+.Policy1 ul{
+  font-weight: 400;
+  font-size: 25px;
+  justify-content: space-around;
+  padding-top: 100px;
+  cursor: pointer;
+ 
+  
+}
+.Policy1 li:hover{
+  color: blue;
+}
+/*Landing Page End*/
+
+/*About Us Start*/
+.About {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/background.jpg);
+  height: 100vh;
+  background-image: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+}
+.logo  {
+  width: 150px;
+  height: auto;
+}
+
+
+h3{
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+.Ourhistory p{
+  text-align: center;
+  font-size: 20px;
+}
+.factory{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+padding-top: 50px;
+padding-bottom: 50px;
+
+  
+}
+.factory-image img{
+width: 500px;
+height: auto;
+gap:20px;
+margin-left: 50px;
+max-width: 80%;
+}
+
+.team{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+padding-top: 50px;
+padding-bottom: 50px;
+
+}.teamplayer p {
+text-align: center;
+font-size: 20px;
+}
+.teamplayer img{
+width: 200px;
+margin-left: 50px;
+max-width: 80%;
+}
+
+
+/*About Us End*/
+
+/* HamBurger Menu Start */
+.hamburger {
+  display: none;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+  /*Hamburger Menu End*/
+
+/*Media Query Start*/
+
+@media only screen and (max-width: 650px) {
+  .menu {
+      
+      display: flex;
+      position:absolute;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      background-color: rgba(255, 255, 255, .15);
+      backdrop-filter: blur(5px);
+      box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+      gap: 20px;
+  }
+  
+  
+  .menu.active {
+    left: 0;
+}
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.logo{
+  width: 100px;
+  position: absolute;
+  right: 370px;
+}
+.Slogan{
+  font-size: 30px ;
+  margin-top: 90px;
+}
+.beer1 img{
+  width: 200px;
+  height: auto;
+  margin-left: 20px;
+}
+.info{
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.info p{
+  margin-left: 20px;
+  padding-top: 20px;
+  font-size: 10px;
+  align-items: flex-start;
+}
+.footerslogan{
+  font-size: 10px;
+  font-weight: 500;
+}
+.FooterLogo{
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}
+.policy{
+  display: none;
+}
+.FooterNav ul{
+  
+  font-size: 10px;
+}
+.SocialIcon li{
+  font-size: 15px;
+
+}
+footer{
+  margin-top: 20px;
+}
+} 
+@media only screen and (min-width: 900px)  {
+
+.nav-link 
+{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;
+	border:1px solid transparent;
+  border-radius:15px;
+}
+.nav-link :hover{
+	background-color: #fff;
+	color:#000;
+}
+.nav-link
+{
+  align-items: center;
+  font-size: 20px;
+}
+.nav-link li
+{
+	display: inline-block;
+}
+
+}
+/*Media Query End*/
