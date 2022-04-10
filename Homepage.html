@@ -1,87 +1,174 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Home Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 class="hidden">First page</h1>
-<div class="sitecontainer">
-    <section class="header">
-		<div class="topsection">
-            <nav class="mainNavLeft">
-            <h2 class="hidden" >Navigation</h2>
-              <ul>
-                  <li><a href="">Home</a></li>
-                  <li><a href=>Our Product</a></li>               
-              </ul>
-            </nav>
-		<img src="images/beer-logo.png" alt="">
-            <nav class="mainNavRight">
-                <li><a href="">About Us</a></li>
-                <li><a href="">Contact Us</a></li>
-            </nav>
-           
-         </div>
-         <div class="Slogan"><p>Great Beer For Great Ocassion</p></div>
-         
-	</section>
-    <section class="Welcome">
-        <div class="welcometext"><p>Welcome text</p>
-            <img src="images/sample-image.jpg" alt="">
+    <div class="sitecontainer">
+      <section class="header" id="header">
+        <h2 class="hidden">Navigation</h2>
+        <div class="topsection">
+          <nav class="nav-bar">
+            <h3 class="hidden">Navigation</h3>
+            <ul class="menu">
+              <li class="nav-link"><a href="">Home</a></li>
+              <li class="nav-link"><a href="">Our Brew</a></li>
+              <li class="nav-link"><a href="">Contact Us</a></li>
+
+              <li>
+                <img src="images/beer-logo.png" class="logo" alt="beer-logo" />
+              </li>
+
+              <li class="nav-link"><a href="">Promotion</a></li>
+              <li class="nav-link"><a href="">About Us</a></li>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
         </div>
-    </section>
-    <section class="Products">
+        <div class="Slogan">
+          SAVE IT, SEE IT<br />
+          GET HIT <br />
+          WITH THE <br />
+          NEW KING OF BEERS
+        </div>
+      </section>
+
+      <section class="Welcome">
+        <h2 class="hidden">Welcome</h2>
+        <div class="welcometext">
+          <img src="images/beer-welcom.jpg" alt="" />
+          <p>
+            LETS TASTE THE REALLY HAPPINESS <br />
+            WITH PAMPERS BEER <br />
+            GET YOUR POWER WITH THE DRINK
+          </p>
+        </div>
+      </section>
+      <section class="Products">
+        <h2 class="hidden">Products</h2>
         <div class="beer">
-            <img src="images/sample-image.jpg" alt="" srcset="">
+          <img src="images/beer-1.png" alt="beer" />
         </div>
         <div class="beer">
-            <img src="images/sample-image.jpg" alt="" srcset="">
+          <img src="images/beer-2.png" alt="beer" />
         </div>
         <div class="beer">
-            <img src="images/sample-image.jpg" alt="" srcset=""><div>
-   
-    </section>
-    <section class="promo">
-        <div class="promoText">
-            <p>beer with all season </p>
-            <img src="images/Promo-Image 1.jpg" alt="PromotionImage" srcset="">
+          <img src="images/beer-3.png" alt="beer" />
         </div>
-    </section>
-    <footer>
-        <div class="FooterLogo"><img src="images/beer-logo.png" alt=""></div>
+        <div class="beer">
+          <img src="images/beer-4.png" alt="beer" />
+        </div>
+      </section>
+      <section class="promo">
+        <h2 class="hidden">Promotions</h2>
+        <div class="promoimage">
+          <img src="images/main-promo-image.png" alt="PromotionImage" />
+          <p>
+            At PAMPERS, we believe our global brand can play a role in driving
+            positive change. <br />
+            Just as we are committed to brewing the highest quality beer – a
+            drink that has <br />
+            been bringing people together for thousands of years – we are also
+            100% committed <br />
+            to creating a brighter, cleaner future that ensures beer can
+            continue <br />
+            to be enjoyed for thousands of years to come.
+          </p>
+          <button type="submit" class="promobtn">Learn More</button>
+        </div>
+
+        <div class="promoimage">
+          <img src="images/main-promo-image1.jpeg" alt="Promotion" />
+          <p>
+            At PAMPERS, we believe our global brand can play a role in driving
+            positive change. <br />
+            Just as we are committed to brewing the highest quality beer – a
+            drink that has <br />
+            been bringing people together for thousands of years – we are also
+            100% committed <br />
+            to creating a brighter, cleaner future that ensures beer can
+            continue <br />
+            to be enjoyed for thousands of years to come.
+          </p>
+          <button type="submit" class="promobtn">Learn More</button>
+        </div>
+      </section>
+      <footer>
+        <h2 class="hidden">Footer</h2>
+        <div class="FooterLogo">
+          <img src="images/beer-logo.png" alt="beer-logo" />
+          <h3 class="hidden">footer-logo</h3>
+          <p class="footerslogan">
+            GREAT CHOICE FOR <br />
+            GREAT OCCASSION
+          </p>
+        </div>
         <div class="SocialIcon">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-            <i class="fa fa-amazon" aria-hidden="true"></i>
+          <h3 class="hidden">SocialMedia</h3>
+          <ul>
+            <li><i class="fa fa-facebook" aria-hidden="true">Facebook</i></li>
+            <li><i class="fa fa-twitter" aria-hidden="true">Twitter</i></li>
+            <li><i class="fa fa-instagram" aria-hidden="true">Instagram</i></li>
+            <li>
+              <i class="fa fa-youtube-play" aria-hidden="true">Youtube</i>
+            </li>
+          </ul>
         </div>
         <div class="FooterNav">
-            <nav>
-
-           
-                <h2 class="hidden" >Navigation</h2>
-                  <ul>
-                      <li><a href="">Home</a></li>
-                      <li><a href=>Our Product</a></li> 
-                      <li><a href="">About Us</a></li>
-                      <li><a href="">Contact Us</a></li>              
-                  </ul>
-                </nav> </div>
-        <div class="ProductSlogan"><p>Footer Slogan </p></div>
-        <div class="SubscribeText"><p>Subscibe Text</Menu></p></div>
-        <div class="EmailInput">
-            <input type="text" name="Email" id="" placeholder="Email Address">
-            <input type="button" value="Submit" placeholder="Submit">
+          <h3 class="hidden">Navigation</h3>
+          <nav>
+            <h4 class="hidden">Navigation</h4>
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Our Brew</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Promotion</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </nav>
         </div>
-    </footer>
-</body>
+        <div class="policy">
+          <h3 class="hidden">Policy</h3>
+          <ul>
+            <li><a href="">Cookies</a></li>
+            <li><a href="">Terms & Condition</a></li>
+            <li><a href="">Privacy Policy </a></li>
+          </ul>
+        </div>
+        <div class="EmailInput">
+          <p>Subscribe</p>
+          <input
+            type="text"
+            name="Email1"
+            id="email1"
+            placeholder="Email Address"
+          />
+          <button type="submit">Submit</button>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/background-change.js"></script>
+  </body>
 </html>
