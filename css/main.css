@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.sitecontainer {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-family: "Source Serif 4", sans-serif;
+}
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/background-image.jpg);
+  height: 100vh;
+  background-image: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+.hidden {
+  display: none;
+}
+.topsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.header img {
+  width: 140px;
+  height: auto;
+}
+.mainNavLeft {
+  display: inline;
+}
+.Slogan {
+  font-family: "Roboto", sans-serif;
+}
+
+.Welcome {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.welcometext {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 30px;
+  margin: auto;
+  padding: 2px;
+}
+.welcometext img {
+  width: 300px;
+  height: auto;
+}
+.Products {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.beer img {
+  width: 300px;
+  height: auto;
+}
+
+.promo {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+  gap: 20px;
+}
+.promoText p {
+  float: right;
+  gap: 20px;
+}
+.promoText img {
+  width: 400px;
+  height: auto;
+  padding-left: 100px;
+}
+footer {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+  justify-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.footer > * {
+  flex: 1 1 200px;
+}
+.FooterLogo img {
+  width: 100px;
+  height: 100px;
+}
+.SocialIcon {
+  width: 150px;
+  height: 200px;
+}
+.FooterNav {
+  width: 150px;
+  height: 200px;
+}
+.ProductSlogan {
+  width: 150px;
+  height: 200px;
+}
+.SubscribeText {
+  width: 200px;
+  height: 100px;
+
+  align-items: center;
+}
+.EmailInput {
+  width: 400px;
+  height: 100px;
+}
+.Promotion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.promo img {
+  width: 500px;
+  height: auto;
+}
